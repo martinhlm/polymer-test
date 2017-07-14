@@ -25,7 +25,7 @@
   </template>
 
   <script>
-    class IconToggle extends Polymer.Element {
+    class IconToggle extends Polymer.GestureEventListeners(Polymer.Element) {
       static get is() {
         return "icon-toggle";
       }
@@ -44,6 +44,10 @@
       }
       constructor() {
         super();
+        Polymer.Gestures.addListener(this, 'tap', () => this.toggle());
+      }
+      toggle() {
+          this.pressed = !this.pressed;
       }
     }
     customElements.define(IconToggle.is, IconToggle);

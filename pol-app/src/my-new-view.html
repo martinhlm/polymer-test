@@ -2,6 +2,7 @@
 <!-- Load the Polymer.Element base class -->
 <link rel="import" href="../bower_components/polymer/polymer-element.html">
 <link rel="import" href="../bower_components/paper-checkbox/paper-checkbox.html">
+<link rel="import" href="../bower_components/paper-carousel/paper-carousel.html">
 
 <dom-module id="my-new-view">
   <!-- Defines the element's style and local DOM -->
@@ -16,6 +17,14 @@
 
     <h1>New view</h1>
     <paper-checkbox>Ready to deploy!</paper-checkbox>
+    <paper-carousel items="1" dotText="false">
+        <img src="https://unsplash.it/800/500/?image=257" draggable="false"/>
+        <img src="https://unsplash.it/800/500/?image=250" draggable="false"/>
+        <img src="https://unsplash.it/800/500/?image=399" draggable="false"/>
+        <img src="https://unsplash.it/800/500/?image=146" draggable="false"/>
+        <img src="https://unsplash.it/800/500/?image=248" draggable="false"/>
+    </paper-carousel>
+
   </template>
   <script>
     // Your new element extends the Polymer.Element base class

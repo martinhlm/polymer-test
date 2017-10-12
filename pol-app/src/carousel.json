@@ -1,0 +1,14 @@
+[
+    {
+        "title": "demo title",
+        "text": "demo text, here for the sole purpose of giving a demo.",
+        "image": "../images/h1.jpg",
+        "link": "//example.com"
+    },
+    {
+        "title": "another title",
+        "text": "more demo text, ",
+        "image": "../images/h2.jpg",
+        "link": "//example.org"
+    }
+]
